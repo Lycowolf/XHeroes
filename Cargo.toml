@@ -1,0 +1,13 @@
+[package]
+name = "XHeroes"
+version = "0.1.0"
+authors = ["Lyco <zdenek.belehradek@seznam.cz>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bracket-lib = "0.8"
+bracket-terminal = "0.8"
+log = "0.4.14"
+env_logger = "0.9.0"
