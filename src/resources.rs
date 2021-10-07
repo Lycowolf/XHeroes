@@ -1,13 +1,14 @@
 use legion::Entity;
 use std::collections::VecDeque;
 use crate::actions::Action;
+use strum::{EnumIter};
 
-#[derive(Clone, Debug, PartialEq, Eq, Ord, PartialOrd)]
+#[derive(Clone, Debug, PartialEq, Eq, Ord, PartialOrd, Hash, EnumIter)]
 #[allow(unused)]
 pub(crate) enum RunState {
     GameStart,
-    PlayersTurn,
-    NPCsTurn,
+    WaitingForInput,
+    Run,
 }
 
 /// List of actors who can act at at this moment.
